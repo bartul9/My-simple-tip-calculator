@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <section class="container big">
+      <h1>Tip Calculator</h1>
+
+      <div class="mb-3">
+        <label for="billPrice" class="form-label"
+          >How much was your bill?</label
+        >
+        <input type="text" class="form-control" id="billPrice" />
+      </div>
+
+      <div class="mb-3">
+        <label for="numOfPeople" class="form-label"
+          >Number Of People Sharing The Bill</label
+        >
+        <input type="text" class="form-control" id="numOfPeople" />
+      </div>
+      <!-- /////////////////////////// -->
+
+      <div class="mb-3">
+        <label for="serviceSatisfaction">How satisfied you were? </label>
+        <select class="form-control" id="serviceSatisfaction">
+          <option>-</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btnMy">Calculate</button>
+    </section>
+    <div class="container final noneDisplay">
+      <p class="">Tip Amount <span class="tipAmount last"></span></p>
+      <p class="">Total Amount <span class="totalAmount last"></span></p>
+      <p class="">
+        Each Person Owes <span class="eachPersonOwes last">/</span>
+      </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
